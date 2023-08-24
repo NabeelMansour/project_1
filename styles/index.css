@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.5rem;
 }
 
 
@@ -13,16 +14,24 @@ body {
 
 header img {
   display: block;
-  width: 100%;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
+  height: 70vh;
+}
+
+nav ul img {
+  width: 30px;
+  height: 30px;
 }
 
 nav ul {
   text-align: center;
   background: lightgray;
   padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-top: 0;
 }
 
 nav ul li {
@@ -33,35 +42,29 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #000;
-
 }
 
 a:hover {
   border-bottom: 2px solid rgb(84, 82, 82);
+  padding-top: 2rem;
 }
 
 .first-item {
   margin-right: 3rem;
 }
 
-/* Section */
+/* Section + Articles */
 
-.article-one,
-.article-two {
+article {
   margin-top: 5rem;
   display: flex;
   justify-content: space-evenly;
 }
 
-.article-one img,
-.article-two img {
+article img {
   display: block;
   width: 35rem;
-}
-
-.article-two img {
-  display: block;
-  height: 20rem;
+  height: 25rem;
 }
 
 .article-two img:first-child,
@@ -73,17 +76,42 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 45%;
-  padding-top: 1rem;
+  margin-bottom: rem;
 }
 
 .last-item {
   margin-left: 3rem;
 }
 
+/* Footer */
+
+footer {
+  background: lightgray;
+  padding: 1rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+
+/* Media Queries */
+
 @media screen and (max-width: 662px) {
-  nav {
+
+  nav,
+  .article-text,
+  article img,
+  footer,
+  header img {
     width: 90%;
     margin: auto;
+  }
+
+  header img {
+    margin-bottom: 5rem;
+  }
+
+  footer {
+    margin-top: 1rem;
   }
 
   nav ul li {
@@ -99,4 +127,23 @@ a:hover {
     margin-right: 0.7rem;
   }
 
+  article {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+}
+
+@media screen and (min-width: 663px) and (max-width: 1163px) {
+
+  article img {
+    margin: auto;
+    width: 50%;
+  }
+
+  .article-text {
+    width: 40%;
+    margin: 0 auto;
+  }
 }
