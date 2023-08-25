@@ -97,7 +97,7 @@ footer {
 
 @media screen and (max-width: 662px) {
 
-  nav,
+  nav ul,
   .article-text,
   article img,
   footer,
@@ -106,7 +106,7 @@ footer {
     margin: auto;
   }
 
-  header img {
+  .header-img {
     margin-bottom: 5rem;
   }
 
@@ -131,6 +131,10 @@ footer {
     display: flex;
     flex-direction: column;
     margin: auto;
+  }
+
+  article img {
+    margin-bottom: 2rem;
   }
 
 }
