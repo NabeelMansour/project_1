@@ -10,14 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <title>Calisthenics for everybody</title>
   </head>
   <body>
     <header>
-      <div class="header-img">
-        <img src="./images/cali.jpg" alt="" />
+      <div class="hero">
+        <video autoplay loop muted class="video-bg">
+          <source src="./images/calistenichs.mp4" type="video/mp4" />
+        </video>
       </div>
+
+      <div class="header-img"></div>
       <nav>
         <ul>
           <li class="first-item">
@@ -66,10 +71,14 @@
         <!-- Article one -->
 
         <article class="article-one">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/7/76/Human_Flag_von_Sven_Kohl_%28Calisthenic_Movement%29%2C_2013.jpg"
-            alt=""
-          />
+          <div class="img-container human-flag">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/76/Human_Flag_von_Sven_Kohl_%28Calisthenic_Movement%29%2C_2013.jpg"
+              alt="human flag exercise"
+              title="human flag exercise"
+              class="article-img"
+            />
+          </div>
           <div class="article-text">
             <h2>What is Calisthenics?</h2>
             <p>
@@ -115,18 +124,27 @@
               a great workout.
             </p>
           </div>
-          <img
-            src="https://images.unsplash.com/photo-1531326044450-7448d47f0b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-            alt=""
-          />
+
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1531326044450-7448d47f0b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="front lever exercise"
+              title="front lever exercise"
+              class="article-img"
+            />
+          </div>
         </article>
 
         <!-- Article Three -->
         <article class="article-three">
-          <img
-            src="https://images.unsplash.com/photo-1634225253504-43d3103669dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-            alt=""
-          />
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1634225253504-43d3103669dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="arch push up exercise"
+              title="arch push up exercise"
+              class="article-img"
+            />
+          </div>
           <div class="article-text">
             <h2>Improves Functional Strength</h2>
             <p>
@@ -162,10 +180,14 @@
               effective form of exercise.
             </p>
           </div>
-          <img
-            src="https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1204&q=80"
-            alt=""
-          />
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1204&q=80"
+              alt="box-squats exercise"
+              title="box-squats exercise"
+              class="article-img"
+            />
+          </div>
         </article>
       </section>
     </main>
@@ -173,7 +195,21 @@
     <!-- Footer -->
 
     <footer>
-      <p>Copyright &copy; 2023 Calisthenichs Times. All rights reserved</p>
+      <div class="footer-info">
+        <p>
+          Copyright &copy; 2023<br />
+          Calisthenichs Times. <br />sAll rights reserved
+        </p>
+        <img src="./images/fitness.png" alt="icon of workout" />
+      </div>
+      <div class="footer-contact">
+        <p>Contact:</p>
+        <p>Nabeel Mansour</p>
+        <address>
+          Kungsörnsgatan 9<br />
+          21561 Malmö
+        </address>
+      </div>
     </footer>
   </body>
 </html>
